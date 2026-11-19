@@ -3,6 +3,13 @@
 #include <string.h>
 #include "./../include/calculator.h"
 
+int main(int argc, char *argv[]) {
+    if (argc == 3 && strcmp(argv[1], "car") == 0) {
+        double a = atof(argv[2]);
+        printf("%lf\n", _car(a));
+        return 0;
+    }
+
 int main(int argc, char *argv[]){
 	if (argc == 4)
 	{
@@ -30,6 +37,10 @@ int main(int argc, char *argv[]){
 	}
 	else {printf("Erreur de parametres");}
 	return 0;
+}
+
+printf("Erreur de parametres\n");
+    return 1;
 }
 
 		
